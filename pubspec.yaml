@@ -1,0 +1,10 @@
+name: mobile_mcp_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.10.7
+
+workspace:
+  - packages/mobile_mcp
+  - example_host
+  - example_tool

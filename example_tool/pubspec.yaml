@@ -1,0 +1,24 @@
+name: example_tool
+description: "MCP Tool Example - Plugin App"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  mobile_mcp:
+    path: ../packages/mobile_mcp
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+resolution: workspace
+
+flutter:
+  uses-material-design: true

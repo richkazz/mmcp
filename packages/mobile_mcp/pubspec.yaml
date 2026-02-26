@@ -1,0 +1,39 @@
+name: mobile_mcp
+description: >
+  A Flutter package implementing the Mobile Model Context Protocol (MCP).
+  Enables cross-app tool discovery, secure registration, and real-time
+  JSON-RPC execution via a hybrid deep-link + local WebSocket transport.
+version: 0.1.0
+homepage: https://github.com/example/mobile_mcp
+publish_to: none
+
+environment:
+  sdk: ^3.10.7
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  app_links: ^6.4.0
+  url_launcher: ^6.3.1
+  web_socket_channel: ^3.0.2
+  uuid: ^4.5.1
+  shared_preferences: ^2.3.4
+  flutter_secure_storage: ^9.2.2
+  meta: ^1.16.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.mobile_mcp
+        pluginClass: MobileMcpPlugin
+      ios:
+        pluginClass: MobileMcpPlugin
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+resolution: workspace
